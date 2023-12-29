@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<a href="{% url 'pokemon-add' %}" class="btn btn-outline-primary">Add New Pokemon</a><br>
+<a href="{% url 'pokemon-add' %}" class="btn btn-outline-primary" style="
+text-decoration-line: overline;
+font-weight: 900;
+border: inset;
+color: currentColor;
+font-size: larger;" >Add New Pokemon</a><br>
 <section class="cards-container">
  <!-- Display Pokemon Cards -->
 {% for card in pokemoncard %}

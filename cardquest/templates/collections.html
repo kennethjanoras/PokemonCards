@@ -2,7 +2,12 @@
 {% load static %}
 
 {% block content %}
-<a href="{% url 'collection-add' %}" class="btn btn-outline-primary">Add New Collection</a><br>
+<a href="{% url 'collection-add' %}" class="btn btn-outline-primary" style="
+text-decoration-line: overline;
+font-weight: 900;
+border: inset;
+color: currentColor;
+font-size: larger;">Add New Collection</a><br>
   <!-- COLLECTIONS -->
   <section class="collection-container">
     <table class="styled-table">

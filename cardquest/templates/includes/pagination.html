@@ -1,6 +1,11 @@
 {% if is_paginated %}
     <nav aria-label="Topics pagination" class="mb-4">
-        <ul class="pagination">
+        <ul class="pagination" style="padding: 5px;
+        /* border: blanchedalmond; */
+        margin: revert;
+        background-color: blanchedalmond;
+        color: crimson;
+        border: solid;">
             {% if page_obj.number > 1 %}
                 <li class="page-item">
                 <a class="page-link" href="?page=1">First</a>

@@ -1,13 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<form role="form" class="" action="" method="post" novalidate>
+<form role="form" class="" action="" method="post" novalidate style="
+padding: 20px;
+font-weight: bold;
+text-align: -webkit-center;
+">
     {% csrf_token %}
     {% include 'includes/form.html' %}
     <br />
     <div class="form-group">
         <div class="col-md-12 col-sm-3">
-            <button type='submit' class="btn btn-primary">Submit</button>
+            <button type='submit' class="btn btn-primary" style="
+            border: inset;
+            cursor: pointer;
+            background-color: honeydew;
+            height: 40px;
+            width: 100px;
+        ">Submit</button>
         </div>
     </div>
 </form>

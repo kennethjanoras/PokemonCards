@@ -3,7 +3,12 @@
 
 {% block content %}
 <!--TRAINERS-->
-<a href="{% url 'trainer-add' %}" class="btn btn-outline-primary">Add New Trainer</a><br>
+<a href="{% url 'trainer-add' %}" class="btn btn-outline-primary" style="
+text-decoration-line: overline;
+font-weight: 900;
+border: inset;
+color: currentColor;
+font-size: larger;">Add New Trainer</a><br>
 <section class="trainers-container">
     <table class="styled-table">
       <tbody>
